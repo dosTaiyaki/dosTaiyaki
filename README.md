@@ -12,7 +12,6 @@
 [![Threads](https://img.shields.io/badge/Threads-000000?style=for-the-badge&logo=threads&logoColor=white)](https://www.threads.com/@taiyakidos)
 
 ## 📱 その他のアカウント
-- 🐦 X (Best): [@Taiyakidos_best](https://x.com/Taiyakidos_best)
 - 🐤 X (Sub): [@Taiyakidos_sub](https://x.com/Taiyakidos_sub)
 - 📧 Email: [taiyaki_dos@yahoo.co.jp](mailto:taiyaki_dos@yahoo.co.jp)
 
