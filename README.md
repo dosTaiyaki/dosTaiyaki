@@ -1,7 +1,7 @@
 <h1 align="center">🌙 Taiyakidos</h1>
 
 <p align="center">
-  <img src="https://dostaiyaki.github.io/linklist/OIG2.6ordoFW.jpg" width="160" alt="プロフィール画像" />
+  <img src="https://avatars.githubusercontent.com/u/140958298?v=4" width="160" alt="プロフィール画像" />
 </p>
 
 <p align="center">
@@ -22,8 +22,6 @@
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:taiyaki_dos@yahoo.co.jp)
 - 質問箱: [https://note.com/qa/taiyakidos](https://note.com/qa/taiyakidos)
 <!-- LINKS:END -->
-
-<sub>このリンク欄は [linklist](https://github.com/dosTaiyaki/linklist) の内容から自動生成されています。リンクの追加・変更は linklist 側で行ってください。</sub>
 
 ## 📊 GitHub統計
 <p align="center">
