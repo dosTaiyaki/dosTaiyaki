@@ -1,6 +1,12 @@
-# 🌙 Taiyakidos
+<h1 align="center">🌙 Taiyakidos</h1>
 
-![プロフィール画像](https://dostaiyaki.github.io/linklist/OIG2.6ordoFW.jpg)
+<p align="center">
+  <img src="https://dostaiyaki.github.io/linklist/OIG2.6ordoFW.jpg" width="160" alt="プロフィール画像" />
+</p>
+
+<p align="center">
+  🔗 リンク集: <a href="https://dostaiyaki.github.io/linklist/">Taiyakidos Linklist</a>
+</p>
 
 ## 🔗 SNSリンク
 <!-- LINKS:START -->
@@ -20,13 +26,15 @@
 <sub>このリンク欄は [linklist](https://github.com/dosTaiyaki/linklist) の内容から自動生成されています。リンクの追加・変更は linklist 側で行ってください。</sub>
 
 ## 📊 GitHub統計
-![GitHubの統計](https://github-readme-stats.vercel.app/api?username=dosTaiyaki&show_icons=true&theme=radical&locale=ja)
-
-## 🏆 トップで使用している言語
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=dosTaiyaki&layout=compact&theme=radical&locale=ja)
+<p align="center">
+  <img height="170" src="https://github-readme-stats.vercel.app/api?username=dosTaiyaki&show_icons=true&theme=tokyonight&locale=ja" alt="GitHubの統計" />
+  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=dosTaiyaki&layout=compact&theme=tokyonight&locale=ja" alt="Top Languages" />
+</p>
 
 ## 📈 コントリビューショングラフ
-![](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=dosTaiyaki&theme=monokai)
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=dosTaiyaki&theme=tokyonight" alt="コントリビューショングラフ" />
+</p>
 
 ## 📫 連絡先
 お気軽にGitHubでコンタクトしてください！
