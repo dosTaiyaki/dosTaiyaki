@@ -1,0 +1,38 @@
+name: Update profile links
+
+# Regenerates the SNS links section of README.md from the LINKS array
+# in dosTaiyaki/linklist (script.js), and commits if anything changed.
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Daily 00:00 JST (15:00 UTC)
+    - cron: "0 15 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update-links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Regenerate links section
+        run: python3 scripts/update_readme.py
+
+      - name: Commit if changed
+        run: |
+          if git diff --quiet -- README.md; then
+            echo "No changes"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "chore: sync SNS links from linklist"
+          git push
