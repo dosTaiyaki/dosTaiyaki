@@ -136,7 +136,7 @@ def main():
     now = datetime.now(jst)
     stamp = (
         f"<sub>※SNSリンクは{now.year}年{now.month}月{now.day}日時点の情報です。"
-        "[linklist](https://github.com/dosTaiyaki/linklist) から自動取得しています。</sub>"
+        "[linklist](https://dostaiyaki.github.io/linklist/) から自動取得しています。</sub>"
     )
     if note_re.search(text):
         text = note_re.sub(stamp, text, count=1)
