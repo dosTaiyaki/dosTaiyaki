@@ -12,6 +12,7 @@
 
 ## 🔗 SNSリンク
 <!-- LINKS:START -->
+<sub>SNSリンクは2026年11月24日時点の情報です。リンク集から自動取得しています。</sub>
 [![X (main)](https://img.shields.io/badge/X_(main)-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/Taiyakidos)
 [![X (sub)](https://img.shields.io/badge/X_(sub)-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/Taiyakidos_sub)
 [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@Taiyakidos)
@@ -21,7 +22,6 @@
 [![Discord (community)](https://img.shields.io/badge/Discord_(community)-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/invite/A6Gy7ggmq2)
 [![Discord](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/users/813386818644213761)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:taiyaki_dos@yahoo.co.jp)
-最終更新日：2026年11月24日
 <!-- LINKS:END -->
 
 ## 📊 GitHub統計

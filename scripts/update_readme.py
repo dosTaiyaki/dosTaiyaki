@@ -122,15 +122,25 @@ def main():
         print("ERROR: LINKS markers not found in README", file=sys.stderr)
         return 1
     existing = m.group(1)
-    date_line = re.compile(r"^最終更新日：.*$", re.MULTILINE)
-    existing_links = date_line.sub("", existing).rstrip("\n")
-    if date_line.search(existing) and existing_links == block:
+    stamp_re = re.compile(r"^(最終更新日：.*|<sub>SNSリンクは.*</sub>)$")
+    existing_lines = [
+        line for line in existing.split("\n")
+        if line and not stamp_re.match(line)
+    ]
+    existing_links = "\n".join(existing_lines)
+    has_note = any(
+        line.startswith("<sub>SNSリンクは") for line in existing.split("\n")
+    )
+    if has_note and existing_links == block:
         print(f"README already up to date ({len(links)} links)")
         return 0
     jst = timezone(timedelta(hours=9))
     now = datetime.now(jst)
-    stamp = f"最終更新日：{now.year}年{now.month}月{now.day}日"
-    block = block + "\n" + stamp
+    stamp = (
+        f"<sub>SNSリンクは{now.year}年{now.month}月{now.day}日時点の情報です。"
+        "リンク集から自動取得しています。</sub>"
+    )
+    block = stamp + "\n" + block
     new_text = pattern.sub(f"{START}\n{block}\n{END}", text, count=1)
     if new_text != text:
         readme_path.write_text(new_text, encoding="utf-8")
