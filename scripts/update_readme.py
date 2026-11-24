@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Regenerate the SNS links section of this profile README.
 
-Source of truth: the LINKS array in dosTaiyaki/linklist's script.js.
+Source of truth: link-card anchors in dosTaiyaki/linklist's index.html.
 The generated block replaces everything between the LINKS:START and
 LINKS:END markers in README.md. Links that have a shields.io badge
 mapping are rendered as badges; the rest become plain text bullets so
@@ -10,7 +10,7 @@ no link is ever dropped.
 Usage:
     python3 scripts/update_readme.py [--readme PATH] [--source PATH]
 
-Without --source, script.js is downloaded from the linklist repo.
+Without --source, index.html is downloaded from the linklist repo.
 """
 
 import argparse
@@ -18,10 +18,12 @@ import re
 import sys
 import urllib.request
 from datetime import datetime, timedelta, timezone
+from html.parser import HTMLParser
 from pathlib import Path
+from urllib.parse import urlsplit
 
-SCRIPT_JS_URL = (
-    "https://raw.githubusercontent.com/dosTaiyaki/linklist/main/script.js"
+LINKLIST_HTML_URL = (
+    "https://raw.githubusercontent.com/dosTaiyaki/linklist/main/index.html"
 )
 START = "<!-- LINKS:START -->"
 END = "<!-- LINKS:END -->"
@@ -65,14 +67,40 @@ def render(label, url):
     return None
 
 
-def parse_links(script_js):
-    labels = re.findall(r'label:\s*"([^"]+)"', script_js)
-    urls = re.findall(r'url:\s*"([^"]+)"', script_js)
-    if not labels or len(labels) != len(urls):
-        raise ValueError(
-            f"LINKS parse failed: {len(labels)} labels vs {len(urls)} urls"
-        )
-    return list(zip(labels, urls))
+class LinkCardParser(HTMLParser):
+    """Collect labeled anchors from the static link-card markup."""
+
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.links = []
+
+    def handle_starttag(self, tag, attrs):
+        if tag.lower() != "a":
+            return
+
+        attributes = dict(attrs)
+        if "link-card" not in attributes.get("class", "").split():
+            return
+
+        label = (attributes.get("data-label") or "").strip()
+        url = (attributes.get("href") or "").strip()
+        if not label or not url:
+            raise ValueError("Every link-card anchor must have data-label and href")
+
+        scheme = urlsplit(url).scheme.lower()
+        if scheme not in {"https", "http", "mailto"}:
+            raise ValueError(f"Unsupported link-card URL scheme: {scheme or '(none)'}")
+
+        self.links.append((label, url))
+
+
+def parse_links(index_html):
+    parser = LinkCardParser()
+    parser.feed(index_html)
+    parser.close()
+    if not parser.links:
+        raise ValueError("No link-card anchors found in linklist index.html")
+    return parser.links
 
 
 def build_block(links):
@@ -96,7 +124,7 @@ def main():
     ap.add_argument("--readme", default=None,
                     help="README.md path (default: repo root README)")
     ap.add_argument("--source", default=None,
-                    help="local script.js path (default: download)")
+                    help="local linklist index.html path (default: download)")
     args = ap.parse_args()
 
     if args.readme:
@@ -105,12 +133,12 @@ def main():
         readme_path = Path(__file__).resolve().parent.parent / "README.md"
 
     if args.source:
-        script_js = Path(args.source).read_text(encoding="utf-8")
+        index_html = Path(args.source).read_text(encoding="utf-8")
     else:
-        with urllib.request.urlopen(SCRIPT_JS_URL, timeout=30) as r:
-            script_js = r.read().decode("utf-8")
+        with urllib.request.urlopen(LINKLIST_HTML_URL, timeout=30) as r:
+            index_html = r.read().decode("utf-8")
 
-    links = parse_links(script_js)
+    links = parse_links(index_html)
     block = build_block(links)
 
     text = readme_path.read_text(encoding="utf-8")

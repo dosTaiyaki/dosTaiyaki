@@ -1,7 +1,7 @@
 name: Update profile links
 
-# Regenerates the SNS links section of README.md from the LINKS array
-# in dosTaiyaki/linklist (script.js), and commits if anything changed.
+# Regenerates the SNS links section of README.md from link-card anchors
+# in dosTaiyaki/linklist (index.html), and commits if anything changed.
 
 on:
   workflow_dispatch:
