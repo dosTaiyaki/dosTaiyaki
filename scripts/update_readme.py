@@ -77,6 +77,8 @@ def parse_links(script_js):
 def build_block(links):
     badges, bullets = [], []
     for label, url in links:
+        if "github.com" in url:
+            continue  # linklist only: the profile README is on GitHub itself
         line = render(label, url)
         if line is None:
             bullets.append(f"- {label}: [{url}]({url})")
