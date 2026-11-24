@@ -121,12 +121,12 @@ def main():
     if not m:
         print("ERROR: LINKS markers not found in README", file=sys.stderr)
         return 1
-    stamp_re = re.compile(r"^(最終更新日：.*|<sub>SNSリンクは.*</sub>)$")
+    stamp_re = re.compile(r"^(最終更新日：.*|<sub>※?SNSリンクは.*</sub>)$")
     existing_links = "\n".join(
         line for line in m.group(1).split("\n")
         if line and not stamp_re.match(line)
     )
-    note_re = re.compile(r"^<sub>SNSリンクは.*</sub>$", re.MULTILINE)
+    note_re = re.compile(r"^<sub>※?SNSリンクは.*</sub>$", re.MULTILINE)
     outside_block = pattern.sub("", text, count=1)
     if existing_links == block and note_re.search(outside_block):
         print(f"README already up to date ({len(links)} links)")
@@ -135,8 +135,8 @@ def main():
     jst = timezone(timedelta(hours=9))
     now = datetime.now(jst)
     stamp = (
-        f"<sub>SNSリンクは{now.year}年{now.month}月{now.day}日時点の情報です。"
-        "リンク集から自動取得しています。</sub>"
+        f"<sub>※SNSリンクは{now.year}年{now.month}月{now.day}日時点の情報です。"
+        "[linklist](https://github.com/dosTaiyaki/linklist) から自動取得しています。</sub>"
     )
     if note_re.search(text):
         text = note_re.sub(stamp, text, count=1)

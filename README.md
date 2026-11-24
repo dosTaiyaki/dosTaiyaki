@@ -34,7 +34,7 @@
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=dosTaiyaki&bg_color=0c2b44&color=b9cbdc&line=b23134&point=f4f8fb&area=true&area_color=b23134&title_color=f4f8fb&hide_border=true" alt="コントリビューショングラフ" />
 </p>
 
-<sub>SNSリンクは2026年11月24日時点の情報です。リンク集から自動取得しています。</sub>
+<sub>※SNSリンクは2026年11月24日時点の情報です。[linklist](https://github.com/dosTaiyaki/linklist) から自動取得しています。</sub>
 <!--
 **dosTaiyaki/dosTaiyaki** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
