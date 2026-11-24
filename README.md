@@ -21,6 +21,7 @@
 [![Discord (community)](https://img.shields.io/badge/Discord_(community)-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/invite/A6Gy7ggmq2)
 [![Discord](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/users/813386818644213761)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:taiyaki_dos@yahoo.co.jp)
+最終更新日：2026年11月24日
 <!-- LINKS:END -->
 
 ## 📊 GitHub統計

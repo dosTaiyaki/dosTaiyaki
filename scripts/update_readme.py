@@ -17,6 +17,7 @@ import argparse
 import re
 import sys
 import urllib.request
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 SCRIPT_JS_URL = (
@@ -114,11 +115,22 @@ def main():
 
     text = readme_path.read_text(encoding="utf-8")
     pattern = re.compile(
-        re.escape(START) + r".*?" + re.escape(END), re.DOTALL
+        re.escape(START) + r"\n(.*?)\n" + re.escape(END), re.DOTALL
     )
-    if not pattern.search(text):
+    m = pattern.search(text)
+    if not m:
         print("ERROR: LINKS markers not found in README", file=sys.stderr)
         return 1
+    existing = m.group(1)
+    date_line = re.compile(r"^最終更新日：.*$", re.MULTILINE)
+    existing_links = date_line.sub("", existing).rstrip("\n")
+    if date_line.search(existing) and existing_links == block:
+        print(f"README already up to date ({len(links)} links)")
+        return 0
+    jst = timezone(timedelta(hours=9))
+    now = datetime.now(jst)
+    stamp = f"最終更新日：{now.year}年{now.month}月{now.day}日"
+    block = block + "\n" + stamp
     new_text = pattern.sub(f"{START}\n{block}\n{END}", text, count=1)
     if new_text != text:
         readme_path.write_text(new_text, encoding="utf-8")
