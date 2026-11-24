@@ -12,7 +12,6 @@
 
 ## 🔗 SNSリンク
 <!-- LINKS:START -->
-<sub>SNSリンクは2026年11月24日時点の情報です。リンク集から自動取得しています。</sub>
 [![X (main)](https://img.shields.io/badge/X_(main)-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/Taiyakidos)
 [![X (sub)](https://img.shields.io/badge/X_(sub)-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/Taiyakidos_sub)
 [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@Taiyakidos)
@@ -35,8 +34,7 @@
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=dosTaiyaki&bg_color=0c2b44&color=b9cbdc&line=b23134&point=f4f8fb&area=true&area_color=b23134&title_color=f4f8fb&hide_border=true" alt="コントリビューショングラフ" />
 </p>
 
-## 📫 連絡先
-お気軽にGitHubでコンタクトしてください！
+<sub>SNSリンクは2026年11月24日時点の情報です。リンク集から自動取得しています。</sub>
 <!--
 **dosTaiyaki/dosTaiyaki** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
