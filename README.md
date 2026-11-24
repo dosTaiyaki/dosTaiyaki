@@ -35,6 +35,13 @@
 </p>
 
 <sub>※SNSリンクは2026年11月24日時点の情報です。<br>[linklist](https://dostaiyaki.github.io/linklist/) から自動取得しています。</sub>
+
+## 利用条件・権利表記
+
+このリポジトリは、コードや独自制作素材の再利用を許諾するライセンスを付与していません。再利用を希望する場合は、事前に権利者へお問い合わせください。
+
+掲載しているSNS名・ロゴ等は各サービスの権利者に帰属し、リンク先の識別目的で掲載しています。各素材には、それぞれのライセンス・利用条件が適用されます。
+
 <!--
 **dosTaiyaki/dosTaiyaki** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
