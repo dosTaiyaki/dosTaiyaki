@@ -58,7 +58,7 @@ def render(label, url):
     if "misskey.io" in url:
         return badge("Misskey", "Misskey", "A1CA03", "misskey", url)
     if "note.com" in url:
-        return badge("note", "note", "41C9B4", "note", url)
+        return badge("note", "note", "111111", "note", url)
     if url.startswith("mailto:"):
         return badge("Email", "Email", "D14836", "gmail", url)
     return None

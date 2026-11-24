@@ -18,7 +18,7 @@
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/taiyakidos)
 [![Threads](https://img.shields.io/badge/Threads-000000?style=for-the-badge&logo=threads&logoColor=white)](https://www.threads.com/@taiyakidos)
 [![Misskey](https://img.shields.io/badge/Misskey-A1CA03?style=for-the-badge&logo=misskey&logoColor=white)](https://misskey.io/@Taiyakidos)
-[![note](https://img.shields.io/badge/note-41C9B4?style=for-the-badge&logo=note&logoColor=white)](https://note.com/taiyakidos)
+[![note](https://img.shields.io/badge/note-111111?style=for-the-badge&logo=note&logoColor=white)](https://note.com/taiyakidos)
 [![Discord (community)](https://img.shields.io/badge/Discord_(community)-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/invite/A6Gy7ggmq2)
 [![Discord](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/users/813386818644213761)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:taiyaki_dos@yahoo.co.jp)
