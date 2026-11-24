@@ -79,6 +79,8 @@ def build_block(links):
     for label, url in links:
         if "github.com" in url:
             continue  # linklist only: the profile README is on GitHub itself
+        if "note.com/qa" in url:
+            continue  # 質問箱: no badge icon exists; profile keeps icon links only (user decision 2026-11-24)
         line = render(label, url)
         if line is None:
             bullets.append(f"- {label}: [{url}]({url})")
