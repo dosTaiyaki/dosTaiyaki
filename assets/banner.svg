@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="800" height="200" role="img" aria-label="Taiyakidos">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#174d75"/>
+      <stop offset="1" stop-color="#0c2b44"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="200" fill="url(#bg)"/>
+  <g fill="#ffffff">
+    <rect x="24" y="34" width="30" height="30" rx="6" opacity="0.14"/>
+    <rect x="62" y="34" width="30" height="30" rx="6" opacity="0.08"/>
+    <rect x="100" y="34" width="30" height="30" rx="6" opacity="0.16"/>
+    <rect x="138" y="34" width="30" height="30" rx="6" opacity="0.08"/>
+    <rect x="24" y="72" width="30" height="30" rx="6" opacity="0.08"/>
+    <rect x="62" y="72" width="30" height="30" rx="6" fill="#b23134" opacity="0.65"/>
+    <rect x="100" y="72" width="30" height="30" rx="6" opacity="0.12"/>
+    <rect x="138" y="72" width="30" height="30" rx="6" opacity="0.08"/>
+    <rect x="24" y="110" width="30" height="30" rx="6" opacity="0.12"/>
+    <rect x="62" y="110" width="30" height="30" rx="6" opacity="0.08"/>
+    <rect x="100" y="110" width="30" height="30" rx="6" opacity="0.08"/>
+    <rect x="138" y="110" width="30" height="30" rx="6" opacity="0.15"/>
+    <rect x="24" y="148" width="68" height="30" rx="6" opacity="0.10"/>
+    <rect x="100" y="148" width="30" height="30" rx="6" opacity="0.08"/>
+    <rect x="138" y="148" width="30" height="30" rx="6" opacity="0.10"/>
+    <rect x="632" y="34" width="30" height="30" rx="6" opacity="0.10"/>
+    <rect x="670" y="34" width="30" height="30" rx="6" opacity="0.15"/>
+    <rect x="708" y="34" width="30" height="30" rx="6" opacity="0.08"/>
+    <rect x="632" y="72" width="30" height="30" rx="6" opacity="0.08"/>
+    <rect x="670" y="72" width="30" height="30" rx="6" opacity="0.10"/>
+    <rect x="708" y="72" width="30" height="30" rx="6" fill="#b23134" opacity="0.65"/>
+    <rect x="632" y="110" width="30" height="30" rx="6" opacity="0.14"/>
+    <rect x="670" y="110" width="30" height="30" rx="6" opacity="0.08"/>
+    <rect x="708" y="110" width="30" height="30" rx="6" opacity="0.12"/>
+    <rect x="632" y="148" width="30" height="30" rx="6" opacity="0.08"/>
+    <rect x="670" y="148" width="68" height="30" rx="6" opacity="0.10"/>
+  </g>
+  <text x="400" y="100" text-anchor="middle" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="46" font-weight="700" letter-spacing="3" fill="#f4f8fb">Taiyakidos</text>
+  <rect x="310" y="114" width="180" height="4" fill="#b23134"/>
+  <text x="400" y="150" text-anchor="middle" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="17" letter-spacing="1" fill="#b9cbdc">dostaiyaki.github.io/linklist</text>
+  <rect y="0" width="800" height="10" fill="#b23134"/>
+  <rect y="190" width="800" height="10" fill="#b23134"/>
+</svg>

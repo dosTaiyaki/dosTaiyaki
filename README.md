@@ -1,4 +1,6 @@
-<h1 align="center">🌙 Taiyakidos</h1>
+<p align="center">
+  <img src="./assets/banner.svg" width="100%" alt="Taiyakidos" />
+</p>
 
 <p align="center">
   <img src="https://avatars.githubusercontent.com/u/140958298?v=4" width="160" alt="プロフィール画像" />
@@ -25,13 +27,13 @@
 
 ## 📊 GitHub統計
 <p align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=dosTaiyaki&show_icons=true&theme=tokyonight&locale=ja" alt="GitHubの統計" />
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=dosTaiyaki&layout=compact&theme=tokyonight&locale=ja" alt="Top Languages" />
+  <img height="170" src="https://github-readme-stats.vercel.app/api?username=dosTaiyaki&show_icons=true&locale=ja&bg_color=0c2b44&title_color=f4f8fb&icon_color=b23134&text_color=b9cbdc&border_color=1d5a86" alt="GitHubの統計" />
+  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=dosTaiyaki&layout=compact&locale=ja&bg_color=0c2b44&title_color=f4f8fb&text_color=b9cbdc&border_color=1d5a86" alt="Top Languages" />
 </p>
 
 ## 📈 コントリビューショングラフ
 <p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=dosTaiyaki&theme=tokyonight" alt="コントリビューショングラフ" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=dosTaiyaki&bg_color=0c2b44&color=b9cbdc&line=b23134&point=f4f8fb&area=true&area_color=b23134&title_color=f4f8fb&hide_border=true" alt="コントリビューショングラフ" />
 </p>
 
 ## 📫 連絡先
