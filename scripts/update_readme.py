@@ -135,7 +135,7 @@ def main():
     jst = timezone(timedelta(hours=9))
     now = datetime.now(jst)
     stamp = (
-        f"<sub>※SNSリンクは{now.year}年{now.month}月{now.day}日時点の情報です。"
+        f"<sub>※SNSリンクは{now.year}年{now.month}月{now.day}日時点の情報です。<br>"
         "[linklist](https://dostaiyaki.github.io/linklist/) から自動取得しています。</sub>"
     )
     if note_re.search(text):
