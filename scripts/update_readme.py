@@ -41,8 +41,6 @@ def badge(alt, label, color, logo, url):
 
 def render(label, url):
     """Return one markdown line for a link, or None for a text bullet."""
-    if "note.com/qa/" in url:
-        return None  # Q&A box: no distinct badge, use a text bullet
     if "discord.com/invite/" in url:
         return badge("Discord (community)", "Discord_(community)",
                      "5865F2", "discord", url)
@@ -60,8 +58,6 @@ def render(label, url):
         return badge("Threads", "Threads", "000000", "threads", url)
     if "misskey.io" in url:
         return badge("Misskey", "Misskey", "A1CA03", "misskey", url)
-    if "note.com" in url:
-        return badge("note", "note", "111111", "note", url)
     if url.startswith("mailto:"):
         return badge("Email", "Email", "D14836", "gmail", url)
     return None
